@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FabDialogLibrary</string>
+    <string name="title_activity_fab_lib">FabLibActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_this_fab_button_is_added_by_library">This fab button is added by library ==> </string>
+    <string name="btn_increment">Increment</string>
+    <string name="btn_decrement">Decrement</string>
+    <string name="str_counter_is_zero">Counter is zero</string>
+</resources>
