@@ -1,3 +1,4 @@
+/*
 package com.pankaj.fabdialog.android.databases;
 
 import android.app.Application;
@@ -6,10 +7,12 @@ import android.arch.lifecycle.LiveData;
 
 import java.util.List;
 
+*/
 /**
  * View Model to keep a reference to the word repository and
  * an up-to-date list of all words.
- */
+ *//*
+
 
 public class CountViewModel extends AndroidViewModel {
 
@@ -41,4 +44,4 @@ public class CountViewModel extends AndroidViewModel {
     public void delete(Count count) {
         mRepository.delete(count);
     }
-}
+}*/

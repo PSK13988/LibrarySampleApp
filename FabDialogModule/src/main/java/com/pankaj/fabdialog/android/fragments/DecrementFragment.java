@@ -1,7 +1,7 @@
 package com.pankaj.fabdialog.android.fragments;
 
 
-import android.arch.lifecycle.ViewModelProviders;
+//import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -14,8 +14,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.pankaj.fabdialog.android.R;
-import com.pankaj.fabdialog.android.databases.Count;
-import com.pankaj.fabdialog.android.databases.CountViewModel;
+//import com.pankaj.fabdialog.android.databases.Count;
+//import com.pankaj.fabdialog.android.databases.CountViewModel;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -26,7 +26,7 @@ public class DecrementFragment extends Fragment {
     private TextView tvDecrement;
     private Button btnDecrement;
     private int counter = 0;
-    private CountViewModel mCountViewModel;
+    //private CountViewModel mCountViewModel;
 
     public DecrementFragment() {
         // Required empty public constructor
@@ -36,7 +36,7 @@ public class DecrementFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Get a new or existing ViewModel from the ViewModelProvider.
-        mCountViewModel = ViewModelProviders.of(this).get(CountViewModel.class);
+        //mCountViewModel = ViewModelProviders.of(this).get(CountViewModel.class);
     }
 
     @Override
@@ -49,7 +49,7 @@ public class DecrementFragment extends Fragment {
         Thread t = new Thread(new Runnable() {
             @Override
             public void run() {
-                counter = mCountViewModel.getTotalRowCount();
+                //counter = mCountViewModel.getTotalRowCount();
                 Log.d("IncrementFragment", " loadedCounter = " + counter);
             }
         });

@@ -1,7 +1,7 @@
 package com.pankaj.fabdialog.android.fragments;
 
 import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
+//import android.arch.lifecycle.ViewModelProviders;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
@@ -16,8 +16,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.pankaj.fabdialog.android.R;
-import com.pankaj.fabdialog.android.databases.Count;
-import com.pankaj.fabdialog.android.databases.CountViewModel;
+//import com.pankaj.fabdialog.android.databases.Count;
+//import com.pankaj.fabdialog.android.databases.CountViewModel;
 
 import java.util.List;
 
@@ -33,7 +33,7 @@ public class IncrementFragment extends Fragment {
     private TextView tvIncrement;
     private Button btnIncrement;
     private Button btnDecrement;
-    private CountViewModel mCountViewModel;
+    //private CountViewModel mCountViewModel;
     private int counter = 0;
 
     public IncrementFragment() {
@@ -44,7 +44,7 @@ public class IncrementFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Get a new or existing ViewModel from the ViewModelProvider.
-        mCountViewModel = ViewModelProviders.of(this).get(CountViewModel.class);
+        //mCountViewModel = ViewModelProviders.of(this).get(CountViewModel.class);
     }
 
     @Override
@@ -66,7 +66,7 @@ public class IncrementFragment extends Fragment {
         Thread t = new Thread(new Runnable() {
             @Override
             public void run() {
-                counter = mCountViewModel.getTotalRowCount();
+                //counter = mCountViewModel.getTotalRowCount();
                 Log.d("IncrementFragment", " loadedCounter = " + counter);
             }
         });
@@ -105,7 +105,7 @@ public class IncrementFragment extends Fragment {
                 Thread t = new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        counter = mCountViewModel.getTotalRowCount();
+                        //counter = mCountViewModel.getTotalRowCount();
                         Log.d("IncrementFragment", "Counter = " + counter);
                         counter++;
                         Log.d("IncrementFragment", "Incremented Counter = " + counter);
@@ -118,8 +118,8 @@ public class IncrementFragment extends Fragment {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                Count count = new Count(counter);
-                mCountViewModel.insert(count);
+                //Count count = new Count(counter);
+                //mCountViewModel.insert(count);
                 tvIncrement.setText("Value --> " + counter);
             }
         });
@@ -128,8 +128,8 @@ public class IncrementFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if (counter > 0) {
-                    Count count = new Count(counter);
-                    mCountViewModel.delete(count);
+                   // Count count = new Count(counter);
+                   //mCountViewModel.delete(count);
                     counter--;
                     tvIncrement.setText("Value --> " + counter);
                 } else {

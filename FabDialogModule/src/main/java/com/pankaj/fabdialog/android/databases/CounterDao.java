@@ -1,3 +1,4 @@
+/*
 package com.pankaj.fabdialog.android.databases;
 
 import android.arch.lifecycle.LiveData;
@@ -8,6 +9,7 @@ import android.arch.persistence.room.Query;
 
 import java.util.List;
 
+*/
 /**
  * The Room Magic is in this file, where you map a Java method call to an SQL query.
  * <p>
@@ -15,7 +17,8 @@ import java.util.List;
  * To keep this example basic, no types that require type converters are used.
  * See the documentation at
  * https://developer.android.com/topic/libraries/architecture/room.html#type-converters
- */
+ *//*
+
 
 @Dao
 public interface CounterDao {
@@ -42,3 +45,4 @@ public interface CounterDao {
     @Delete
     void delete(Count count);
 }
+*/

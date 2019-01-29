@@ -1,3 +1,4 @@
+/*
 package com.pankaj.fabdialog.android.databases;
 
 import android.arch.persistence.room.ColumnInfo;
@@ -5,6 +6,7 @@ import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 import android.support.annotation.NonNull;
 
+*/
 /**
  * A basic class representing an entity that is a row in a one-column database table.
  *
@@ -14,7 +16,8 @@ import android.support.annotation.NonNull;
  * <p>
  * See the documentation for the full rich set of annotations.
  * https://developer.android.com/topic/libraries/architecture/room.html
- */
+ *//*
+
 
 @Entity(tableName = "count_table")
 public class Count {
@@ -31,4 +34,4 @@ public class Count {
     public Integer getCount() {
         return this.mCount;
     }
-}
+}*/

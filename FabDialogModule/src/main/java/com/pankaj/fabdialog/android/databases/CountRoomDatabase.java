@@ -1,3 +1,4 @@
+/*
 package com.pankaj.fabdialog.android.databases;
 
 import android.arch.persistence.db.SupportSQLiteDatabase;
@@ -8,10 +9,12 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 
+*/
 /**
  * This is the backend. The database. This used to be done by the OpenHelper.
  * The fact that this has very few comments emphasizes its coolness.
- */
+ *//*
+
 
 @Database(entities = {Count.class}, version = 1)
 public abstract class CountRoomDatabase extends RoomDatabase {
@@ -37,10 +40,12 @@ public abstract class CountRoomDatabase extends RoomDatabase {
         return INSTANCE;
     }
 
-    /**
+    */
+/**
      * Override the onOpen method to populate the database.
      * For this sample, we clear the database every time it is created or opened.
-     */
+     *//*
+
     private static RoomDatabase.Callback sRoomDatabaseCallback = new RoomDatabase.Callback() {
 
         @Override
@@ -53,3 +58,4 @@ public abstract class CountRoomDatabase extends RoomDatabase {
 
 
 }
+*/

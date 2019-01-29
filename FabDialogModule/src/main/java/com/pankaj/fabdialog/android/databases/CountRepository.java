@@ -1,3 +1,4 @@
+/*
 package com.pankaj.fabdialog.android.databases;
 
 import android.app.Application;
@@ -6,10 +7,12 @@ import android.os.AsyncTask;
 
 import java.util.List;
 
+*/
 /**
  * Abstracted Repository as promoted by the Architecture Guide.
  * https://developer.android.com/topic/libraries/architecture/guide.html
- */
+ *//*
+
 
 public class CountRepository {
 
@@ -77,3 +80,4 @@ public class CountRepository {
         }
     }
 }
+*/
